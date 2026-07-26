@@ -3,5 +3,4 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://84hz.com',
-  base: '/84hz',
 });
