@@ -8,6 +8,11 @@
 
     <title>Why Systems? | 84Hz</title>
 
+    <meta
+      name="description"
+      content="A perspective for understanding the world through systems thinking."
+    />
+
     <style>
       * {
         margin: 0;
@@ -15,11 +20,15 @@
         box-sizing: border-box;
       }
 
+      html {
+        font-size: 16px;
+      }
+
       body {
         font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
           sans-serif;
         background: #ffffff;
-        color: #111;
+        color: #111111;
         padding: 80px 24px;
       }
 
@@ -28,33 +37,9 @@
         margin: 0 auto;
       }
 
-      h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        letter-spacing: -0.05em;
+      .back {
         margin-bottom: 56px;
-      }
-
-      p {
-        font-size: 1.15rem;
-        line-height: 1.9;
-        color: #444;
-        margin-bottom: 30px;
-      }
-
-      blockquote {
-        margin: 48px 0;
-        padding-left: 24px;
-        border-left: 2px solid #ddd;
-        color: #111;
-        font-size: 1.3rem;
-        line-height: 1.6;
-      }
-
-      hr {
-        border: none;
-        border-top: 1px solid #eee;
-        margin: 64px 0;
+        font-size: 1rem;
       }
 
       a {
@@ -67,20 +52,89 @@
         border-color: #111;
       }
 
-      .back {
-        margin-bottom: 56px;
-        font-size: 1rem;
+      h1 {
+        font-size: 3.5rem;
+        line-height: 1.05;
+        letter-spacing: -0.06em;
+        margin-bottom: 16px;
+      }
+
+      .subtitle {
+        color: #666;
+        font-size: 1.15rem;
+        margin-bottom: 72px;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-top: 72px;
+        margin-bottom: 24px;
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        font-size: 1.15rem;
+        line-height: 1.9;
+        color: #444;
+        margin-bottom: 28px;
+      }
+
+      blockquote {
+        margin: 48px 0;
+        padding-left: 24px;
+        border-left: 3px solid #111;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #111;
+      }
+
+      ul {
+        margin: 24px 0 40px 28px;
+      }
+
+      li {
+        margin-bottom: 16px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #444;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #eee;
+        margin: 72px 0;
       }
 
       .closing {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         color: #111;
-        margin-top: 56px;
+        margin-top: 48px;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.6rem;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        p,
+        li {
+          font-size: 1rem;
+        }
+
+        blockquote {
+          font-size: 1.25rem;
+        }
       }
     </style>
   </head>
 
   <body>
+
     <article>
 
       <div class="back">
@@ -89,93 +143,196 @@
 
       <h1>Why Systems?</h1>
 
-      <p>
-        We live in a world obsessed with events.
+      <p class="subtitle">
+        A perspective for understanding the world.
       </p>
 
       <p>
-        A product launch fails. An AI model hallucinates. A team misses its
-        goals. A company loses momentum. A promising career stalls.
+        Most of us experience the world one event at a time.
       </p>
 
       <p>
-        Our instinct is to investigate the event itself. We ask what happened,
-        who made the mistake, or which decision triggered the outcome.
-      </p>
-
-      <blockquote>
-        But events are only the visible surface of much deeper systems.
-      </blockquote>
-
-      <p>
-        Every outcome is shaped by something larger: incentives, structures,
-        feedback loops, constraints, culture, architecture, policies, and the
-        countless interactions between them.
+        A product launch fails. An AI model produces an unexpected response. A
+        security breach makes the headlines. A talented employee resigns. A
+        company that once moved quickly suddenly becomes slow.
       </p>
 
       <p>
-        When we only fix symptoms, the same patterns return. When we understand
-        the system, we create the possibility for lasting change.
-      </p>
-
-      <hr />
-
-      <p>
-        Systems thinking doesn't provide easy answers.
+        These events capture our attention because they are visible. They are
+        immediate. They demand an explanation.
       </p>
 
       <p>
-        It asks better questions.
+        Our instinct is to ask:
       </p>
 
       <blockquote>
-        What conditions made this outcome likely?
-        <br /><br />
-        What incentives are driving this behavior?
-        <br /><br />
-        Which feedback loops are reinforcing the problem?
-        <br /><br />
-        How might we redesign the system instead of reacting to its symptoms?
+        What happened?
       </blockquote>
 
-      <hr />
-
       <p>
-        This perspective applies everywhere.
+        It is a natural question.
       </p>
 
       <p>
-        In AI, it helps us think beyond models to governance, trust,
-        observability, and human oversight.
+        But it is rarely the most useful one.
+      </p>
+
+      <hr>
+
+      <h2>Events Are Visible. Systems Are Not.</h2>
+
+      <p>
+        Behind every visible event lies an invisible system.
       </p>
 
       <p>
-        In engineering, it shifts our attention from individual features to
-        architecture, reliability, and long-term evolution.
+        Products are shaped by architectures. Organizations by incentives.
+        Markets by rules. Careers by habits. AI by data, objectives,
+        governance, evaluation, and human oversight.
       </p>
 
       <p>
-        In organizations, it reveals how incentives and structures shape
-        behavior more than intentions.
+        By the time we notice an outcome, the system has often been producing
+        it for months—or years.
+      </p>
+
+      <blockquote>
+        Events are where systems become visible.
+      </blockquote>
+
+      <hr>
+
+      <h2>The Limits of Event Thinking</h2>
+
+      <p>
+        Imagine a software team that repeatedly misses deadlines.
       </p>
 
       <p>
-        In careers, it encourages us to design environments that compound
-        learning rather than simply accumulating experience.
+        We could conclude that the team simply needs to work harder.
       </p>
-
-      <hr />
 
       <p>
-        84Hz exists to explore these ideas through essays, research, mental
-        models, and practical frameworks.
+        A systems perspective asks different questions.
       </p>
+
+      <ul>
+        <li>What incentives shape behaviour?</li>
+        <li>Where are the bottlenecks?</li>
+        <li>Which feedback loops reinforce the problem?</li>
+        <li>What constraints exist that nobody is talking about?</li>
+        <li>How could the system itself be redesigned?</li>
+      </ul>
+
+      <p>
+        The objective shifts from fixing today's problem to designing a better
+        tomorrow.
+      </p>
+
+      <hr>
+
+      <h2>Every System Produces Its Outcomes</h2>
+
+      <blockquote>
+        Every system is perfectly designed to get the results it gets.
+      </blockquote>
+
+      <p>
+        Whether discussing organizations, products, AI, governments, or
+        careers, repeated outcomes are rarely accidental.
+      </p>
+
+      <p>
+        Incentives create behaviour.
+      </p>
+
+      <p>
+        Feedback loops reinforce patterns.
+      </p>
+
+      <p>
+        Constraints shape decisions.
+      </p>
+
+      <p>
+        Systems quietly determine what becomes easy, difficult, rewarded, or
+        ignored.
+      </p>
+
+      <hr>
+
+      <h2>Seeing Systems Everywhere</h2>
+
+      <p>
+        Once you begin thinking this way, you cannot unsee it.
+      </p>
+
+      <p>
+        AI is not simply about models. It is about governance, evaluation,
+        trust, incentives, observability, and people.
+      </p>
+
+      <p>
+        Engineering is not simply about code. It is about architecture,
+        interfaces, ownership, and evolution.
+      </p>
+
+      <p>
+        Leadership is not simply about people. It is about designing
+        environments where good decisions become the natural outcome.
+      </p>
+
+      <p>
+        Careers are not built from isolated opportunities. They emerge from
+        years of curiosity, deliberate practice, relationships, and learning.
+      </p>
+
+      <blockquote>
+        Different domains.<br />
+        The same underlying principles.
+      </blockquote>
+
+      <hr>
+
+      <h2>The Questions Worth Asking</h2>
+
+      <p>
+        Systems thinking changes the questions we ask.
+      </p>
+
+      <ul>
+        <li>What conditions made this outcome likely?</li>
+        <li>What incentives are driving this behaviour?</li>
+        <li>Which feedback loops are reinforcing it?</li>
+        <li>Where is the real leverage point?</li>
+        <li>How do we redesign the system instead of reacting to its symptoms?</li>
+      </ul>
+
+      <hr>
+
+      <h2>Why 84Hz Exists</h2>
+
+      <p>
+        84Hz exists to explore the systems that shape our world.
+      </p>
+
+      <p>
+        Through essays, research, frameworks, and experiments, this studio
+        examines artificial intelligence, engineering, governance,
+        organizations, technology, and careers through a single lens:
+      </p>
+
+      <blockquote>
+        Better systems create better outcomes.
+      </blockquote>
 
       <p class="closing">
-        Because changing outcomes begins with changing the systems that produce
-        them.
+        The topics will evolve.<br />
+        The perspective will remain the same.
       </p>
 
     </article>
+
   </body>
 </html>
